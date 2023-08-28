@@ -1,0 +1,77 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .Cart {
+        &__container {
+            width: calc(100vw - 40px);
+            margin: 0 20px;
+        }
+    }
+    .Payment {
+        &__title {
+            font-size: 36px;
+        }
+        &__sum {
+            font-size: 16px;
+        }
+        &__order {
+            font-size: 20px;
+        }
+    }
+    .Bill {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .Cart {
+        &__container {
+            width: calc(100vw - 20px);
+            margin: 0 10px;
+            &__Products {
+                width: 70%;
+            }
+        }
+    }
+    .Payment {
+        width: calc(30% - 40px);
+        &__title {
+            font-size: 36px;
+        }
+        &__sum {
+            font-size: 16px;
+        }
+        &__order {
+            font-size: 20px;
+        }
+    }
+    .Bill {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .Cart {
+        &__container {
+            width: calc(100vw - 20px);
+            margin: 0 10px;
+            flex-direction: column;
+            width: 100%;
+            &__Products {
+                width: 100%;
+            }
+        }
+    }
+    .Payment {
+        width: calc(70%);
+        margin: 0 auto;
+        &__title {
+            font-size: 36px;
+        }
+        &__sum {
+            font-size: 16px;
+        }
+        &__order {
+            font-size: 20px;
+        }
+    }
+    .Bill {
+        font-size: 12px;
+    }
+}

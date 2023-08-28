@@ -1,0 +1,54 @@
+@font-face {
+    font-family: T-bold;
+    src: url(/src/fonts/TitilliumWeb-Bold.ttf);
+}
+@font-face {
+    font-family: T-light;
+    src: url(/src/fonts/TitilliumWeb-Light.ttf);
+}
+@font-face {
+    font-family: T-regular;
+    src: url(/src/fonts/TitilliumWeb-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    outline:none;
+}
+
+html[data-theme = light] {
+    --bgColor: white;
+    --bgHeader: #E1E1E1;
+    --color: black;
+    --bgAltColor: #2D2D2D;
+    --altColor: white;
+    --serch-round: #373737;
+}
+
+html[data-theme = dark] {
+    --bgColor: #1D1D23;
+    --bgHeader: #282828;
+    --color: white;
+    --bgAltColor: white;
+    --altColor: #373737;
+    --serch-round: #373737;
+}
+
+@import './main/MainPage';
+@import './profile/Auth';
+@import './profile/Profile';
+@import './main/ProductCard';
+@import './main/Product';
+@import './profile/Liked';
+@import './profile/cart';
+@import './main/Search';
+@import './main/Slider';
+
+// Adaptive
+@import './main/MainPageAdaptive';
+@import './profile/ProfileAdaptive';
+@import './profile/LikedAdaptive';
+@import './profile/cartAdaptive';
+@import './main/ProductAdaptive';

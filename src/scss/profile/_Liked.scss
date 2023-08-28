@@ -1,0 +1,40 @@
+.NoLikes {
+    width: 100vw;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+	font-family: T-bold, sans-serif;
+	width: 100%; 
+    height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: var(--color);
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: var(--bgColor); stroke: var(--color);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: var(--bgColor); stroke: var(--color); }
+	80%  {fill: var(--bgColor); stroke: var(--color); stroke-width: 3; }
+	100% {
+		fill: var(--color); stroke: var(--color);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+.Liked {
+    width: 1440px;
+    margin: 20px auto;
+    height: calc(100vh - 75px - 40px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

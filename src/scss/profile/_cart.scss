@@ -1,0 +1,71 @@
+.Cart {
+    width: 100vw;
+    min-height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    &__container {
+        width: 1440px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        &__Products {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80%;
+            &__el {
+                margin: 20px;
+                height: fit-content;
+            }
+        }
+    }
+}
+.Payment {
+    width: calc(20% - 40px);
+    height: fit-content;
+    padding: 20px;
+    background-color: var(--bgHeader);
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    &__title {
+        font-family: T-bold, sans-serif;
+        color: var(--color);
+        font-size: 48px;
+    }
+    &__line {
+        width: 100%;
+        background-color: var(--color);
+        height: 2px;
+    }
+    &__sum {
+        font-family: T-regular, sans-serif;
+        color: var(--color);
+        font-size: 24px;
+    }
+    &__order {
+        height: 65px;
+        border-radius: 15px;
+        border: none;
+        background-color: var(--bgColor);
+        transition-duration: 300ms;
+        color: var(--color);
+        font-family: T-bold, sans-serif;
+        font-size: 32px;
+        cursor: pointer;
+        &:hover {
+            -webkit-box-shadow: 0px 0px 10px 2px var(--bgAltColor);
+                -moz-box-shadow: 0px 0px 10px 2px var(--bgAltColor);
+                    box-shadow: 0px 0px 10px 2px var(--bgAltColor);
+        }
+    }
+}
+.Bill {
+    font-size: 16px;
+    font-family: T-regular;
+    color: var(--color);
+}

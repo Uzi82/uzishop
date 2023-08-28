@@ -1,0 +1,65 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .Profile {
+        width: calc(100vw - 40px);
+        margin: 20px 0;
+        &__elements {
+            &__el {
+                width: 250px;
+                height: 200px;
+                &-header {
+                    font-size: 24px;
+                }
+                &-paragraph {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .Profile {
+        width: calc(100vw - 40px);
+        margin: 20px 0;
+        &__elements { 
+            &__el {
+                width: 175px;
+                height: 125px;
+                &-header {
+                    font-size: 20px;
+                }
+                &-paragraph {
+                    font-size: 12px;
+                }
+            }
+        }
+        &__logOut {
+            font-size: 24px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .Profile {
+        &__header {
+            font-size: 32px;
+        }
+        width: calc(100vw - 40px);
+        margin: 20px 0;
+        &__elements { 
+            gap: 20px;
+            &__el {
+                width: 250px;
+                height: 200px;
+                &-header {
+                    font-size: 32px;
+                }
+                &-paragraph {
+                    font-size: 20px;
+                }
+            }
+        }
+        &__logOut {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    }
+}

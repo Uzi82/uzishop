@@ -1,0 +1,88 @@
+.Product {
+    width: 1440px;
+    &Container {
+        width: 100vw;
+        min-height: calc(100vh - 75px);
+        display: flex;
+        justify-content: center;
+    }
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    &__img {
+        height: 70vh;
+        width: auto;
+        border-radius: 30px;
+    }
+    &__text {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &__title {
+            color: var(--color);
+            font-size: 36px;
+            font-family: T-bold, sans-serif;
+            text-align: center;
+        }
+        &__price {
+            color: var(--color);
+            font-size: 32px;
+            font-family: T-light, sans-serif;
+            padding-left: 20px;
+        }
+        &__buttons {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &__btn {
+                width: 40%;
+                margin: 0 15px;
+                height: 40px;
+                background-color: var(--bgHeader);
+                color: var(--color);
+                font-family: T-bold, sans-serif;
+                font-size: 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition-duration: 300ms;
+                &:hover {
+                    -webkit-box-shadow: 0px 0px 5px 2px var(--bgAltColor) inset;
+                    -moz-box-shadow: 0px 0px 5px 2px var(--bgAltColor) inset;
+                    box-shadow: 0px 0px 5px 2px var(--bgAltColor) inset;
+                }
+            }
+        }
+        &__line {
+            width: 100%;
+            height: 2px;
+            background-color: var(--color);
+        }
+        &__description {
+            font-size: 16px;
+            font-family: T-regular, sans-serif;
+            color: var(--color);
+        }
+    }
+}
+
+.Heart {
+    animation: text-focus-in 300ms cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}

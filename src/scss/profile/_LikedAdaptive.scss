@@ -1,0 +1,28 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    svg text {
+        font-size: 75px;
+    }
+    .Liked {
+        width: calc(100vw - 40px);
+        margin: 20px 20px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    svg text {
+        font-size: 75px;
+    }
+    .Liked {
+        width: calc(100vw - 40px);
+        margin: 20px 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    svg text {
+        font-size: 75px;
+    }
+    .Liked {
+        width: calc(100vw - 40px);
+        margin: 20px 20px;
+        gap: 20px;
+    }
+}

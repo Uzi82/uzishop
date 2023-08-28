@@ -1,0 +1,88 @@
+.Auth {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__container {
+        padding: 20px 30px;
+        width: 500px;
+        height: fit-content;
+        background-color: var(--bgHeader);
+        border-radius: 20px;
+        &__header {
+            display: inline-flex;
+            align-items: flex-end;
+            width: 100%;
+            padding: 0 20px;
+            color: var(--color);
+            font-family: T-bold, sans-serif;
+            font-size: 36px;
+            gap: 10px;
+            &__main {
+                font-size: 48px;
+            }
+            &__other {
+                color: var(--color);
+            }
+        }
+        &__line {
+            width: 100%;
+            height: 2px;
+            background-color: var(--bgAltColor);
+            margin: 10px 0;
+        }
+        &__form {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            margin-top: 30px;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            &__el{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__header {
+                    font-family: T-bold;
+                    font-size: 32px;
+                    color: var(--color);
+                    padding-left: 40px;
+                    width: 100%;
+                }
+                &__input {
+                    width: 90%;
+                    height: 45px;
+                    border: none;
+                    margin: 10px auto;
+                    padding-left: 20px;
+                    border-radius: 10px;
+                    background-color: var(--bgColor);
+                    color: var(--color);
+                    font-family: T-regular;
+                    font-size: 24px;
+                }
+            }
+        }
+        &__sumbit {
+            border-radius: 7px;
+            border: none;
+            width: 90%;
+            height: 60px;
+            background-color: var(--bgColor);
+            color: var(--color);
+            font-family: T-bold, sans-serif;
+            font-size: 36px;
+            transition-duration: 300ms;
+            margin: 40px 0;
+            cursor: pointer;
+            &:hover{
+                background-color: var(--bgAltColor);
+                color: var(--altColor);
+            }
+        }
+    }
+}

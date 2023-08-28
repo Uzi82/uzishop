@@ -11,6 +11,9 @@
 # production
 /build
 
+# supaBase keys
+/src/keys
+
 # misc
 .DS_Store
 .env.local

@@ -1,0 +1,89 @@
+
+.Profile-container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Profile {
+    width: 1440px;
+    height: fit-content;
+    &__header {
+        padding-left: 40px;
+        font-family: T-light;
+        font-size: 48px;
+        margin: 30px 0 10px 0;
+        color: var(--color);
+        &>span {
+            font-family: T-bold;
+            text-decoration: underline;
+        }
+    }
+    &__line {
+        width: 100%;
+        height: 2px;
+        background-color: var(--color);
+    }
+    &__elements {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 40px 0;
+        &__el {
+            width: 400px;
+            height: 300px;
+            text-decoration: none;
+            color: var(--color);
+            background-color: var(--bgHeader);
+            border-radius: 20px;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transition-duration: 300ms;
+            &:hover {
+                scale: 0.98;
+            }
+            &-header {
+                font-family: T-bold, sans-serif;
+                font-size: 48px;
+                width: 80%;
+            }
+            &-line {
+                width: 90%;
+                height: 2px;
+                background-color: var(--color);
+            }
+            &-paragraph {
+                font-family: T-light, sans-serif;
+                font-size: 24px;
+                width: 90%;
+                margin-top: 20px;
+            }
+        }
+    }
+    &__logOut {
+        position: absolute;
+        left: 70%;
+        border: none;
+        padding: 3px 15px;
+        border-radius: 10px;
+        font-family: T-bold, sans-serif;
+        color: var(--color);
+        font-size: 36px;
+        background-color: var(--bgHeader);
+        cursor: pointer;
+        transition-duration: 300ms;
+        &:hover {
+            background-color: var(--bgAltColor);
+            color: var(--altColor);
+        }
+    }
+}

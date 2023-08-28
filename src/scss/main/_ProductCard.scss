@@ -1,0 +1,62 @@
+.Card {
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: var(--bgHeader);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    &__img {
+        width: 258px;
+        height: 344px;
+        border-radius: 7px;
+        object-fit:cover;
+    }
+    &__title {
+        font-family: T-bold, sans-serif;
+        font-size: 24px;
+        color: var(--color);
+        width: 85%;
+        text-align: center;
+    }
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        align-items: center;
+        &__price {
+            font-family: T-light, sans-serif;
+            font-size: 32px;
+            color: var(--color);
+        }
+        &__link {
+            padding: 2px 10px;
+            font-family: T-bold, sans-serif;
+            font-size: 20px;
+            color: var(--color);
+            text-decoration: none;
+            background-color: var(--bgColor);
+            transition-duration: 300ms;
+            border-radius: 3px;
+            height: fit-content;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--bgAltColor);
+                color: var(--altColor);
+            }
+        }
+    }   
+}
+.Products {
+    display: flex;
+    width: 1440px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0;
+}
