@@ -9,7 +9,6 @@ import Footer from "./Footer"
 
 const MainPage: React.FC = () => {
     const [products, setProducts] = useState<Array<product>>()
-    const [upd, Update] = useState<boolean>(true)
     useTheme()
     useEffect(() => {
         getProducts().then(res=> {
@@ -38,7 +37,6 @@ const MainPage: React.FC = () => {
                                 : <h1>No products yet</h1>
                         }
                     </div>
-                    
                 </main>
                 <Footer />
             </div>

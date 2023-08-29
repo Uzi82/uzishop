@@ -1,0 +1,92 @@
+.CreateProduct {
+    width: 100vw;
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__conteiner {
+        width: 1440px;
+        min-height: calc(100vh - 75px);
+        display: flex;
+        flex-direction: column;
+    }
+    &__header {
+        font-family: T-bold, sans-serif;
+        font-size: 64px;
+        color: var(--color);
+    }
+    &__title {
+        font-family: T-regular, sans-serif;
+        font-size: 36px;
+        color: var(--color);
+        padding-left: 20px;
+    }
+    &__inputTitle {
+        background-color: var(--bgHeader);
+        color: var(--color);
+        height: 50px;
+        border-radius: 10px;
+        border: 0;
+        padding: 0 20px;
+        width: 400px;
+        font-size: 24px;
+        font-family: T-light, sans-serif;
+    }
+    &__inputDescription {
+        width: 60%;
+        height: 300px;
+        resize: none;
+        background-color: var(--bgHeader);
+        color: var(--color);
+        border-radius: 10px;
+        border: 0;
+        padding: 5px 20px;
+        font-size: 24px;
+        font-family: T-light, sans-serif;
+    }
+    &__inputPrice {
+        background-color: var(--bgHeader);
+        color: var(--color);
+        border-radius: 10px;
+        font-size: 24px;
+        font-family: T-light, sans-serif;
+        height: 50px;
+        width: 250px;
+        border: none;
+        padding: 0 20px;
+    }
+    &__inputImg {
+        background-color: var(--bgHeader);
+        color: var(--color);
+        border-radius: 10px;
+        font-size: 24px;
+        font-family: T-light, sans-serif;
+        height: 50px;
+        width: 250px;
+        border: none;
+        padding: 0 20px;
+    }
+    &__PriceAndImg {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 15px 0;
+    }
+    &__sumbit {
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: var(--bgHeader);
+        margin-left: auto;
+        border: none;
+        font-family: T-bold, sans-serif;
+        font-size: 24px;
+        color: var(--color);
+        cursor: pointer;
+        transition-duration: 300ms;
+        &:hover {
+            color: var(--altColor);
+            background-color: var(--bgAltColor);
+        }
+    }
+}

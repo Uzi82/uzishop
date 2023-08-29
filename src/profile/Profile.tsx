@@ -32,7 +32,7 @@ const Profile: React.FC = () => {
                             <div className="Profile__elements__el-line"></div>
                             <p className="Profile__elements__el-paragraph">Your cart, where you can buy you products whith using cards.</p>
                         </Link>
-                        <Link to={'/Cart'} className="Profile__elements__el">
+                        <Link to={'/Settings'} className="Profile__elements__el">
                             <h1 className="Profile__elements__el-header">Settings</h1>
                             <div className="Profile__elements__el-line"></div>
                             <p className="Profile__elements__el-paragraph">Here you can change password, email and etc.</p>

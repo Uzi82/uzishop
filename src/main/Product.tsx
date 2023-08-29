@@ -24,13 +24,11 @@ const Product: React.FC = () => {
         if(!product) getProduct(id).then(res => {
             if(res !== undefined && res) setProduct(res[0])
         })
-    })
+    }, [product])
     function cartHandle() {
-        console.log('Added to cart')
         if(user && product !== undefined) addCart(user, product)
     }
     function likeHandle() {
-        console.log('Liked')
         if(product !== undefined) {
             if(!liked && user) {
                 setHeartClass('')

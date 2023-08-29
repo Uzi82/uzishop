@@ -45,6 +45,8 @@ html[data-theme = dark] {
 @import './profile/cart';
 @import './main/Search';
 @import './main/Slider';
+@import './profile/Stuff';
+@import './profile/Settings';
 
 // Adaptive
 @import './main/MainPageAdaptive';
@@ -52,3 +54,5 @@ html[data-theme = dark] {
 @import './profile/LikedAdaptive';
 @import './profile/cartAdaptive';
 @import './main/ProductAdaptive';
+@import './profile/StuffAdaptive';
+@import './profile/SettingsAdaptive';

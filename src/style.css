@@ -1110,6 +1110,174 @@ svg text {
   gap: 20px;
 }
 
+.CreateProduct {
+  width: 100vw;
+  height: calc(100vh - 75px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.CreateProduct__conteiner {
+  width: 1440px;
+  min-height: calc(100vh - 75px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.CreateProduct__header {
+  font-family: T-bold, sans-serif;
+  font-size: 64px;
+  color: var(--color);
+}
+.CreateProduct__title {
+  font-family: T-regular, sans-serif;
+  font-size: 36px;
+  color: var(--color);
+  padding-left: 20px;
+}
+.CreateProduct__inputTitle {
+  background-color: var(--bgHeader);
+  color: var(--color);
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  padding: 0 20px;
+  width: 400px;
+  font-size: 24px;
+  font-family: T-light, sans-serif;
+}
+.CreateProduct__inputDescription {
+  width: 60%;
+  height: 300px;
+  resize: none;
+  background-color: var(--bgHeader);
+  color: var(--color);
+  border-radius: 10px;
+  border: 0;
+  padding: 5px 20px;
+  font-size: 24px;
+  font-family: T-light, sans-serif;
+}
+.CreateProduct__inputPrice {
+  background-color: var(--bgHeader);
+  color: var(--color);
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: T-light, sans-serif;
+  height: 50px;
+  width: 250px;
+  border: none;
+  padding: 0 20px;
+}
+.CreateProduct__inputImg {
+  background-color: var(--bgHeader);
+  color: var(--color);
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: T-light, sans-serif;
+  height: 50px;
+  width: 250px;
+  border: none;
+  padding: 0 20px;
+}
+.CreateProduct__PriceAndImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  margin: 15px 0;
+}
+.CreateProduct__sumbit {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--bgHeader);
+  margin-left: auto;
+  border: none;
+  font-family: T-bold, sans-serif;
+  font-size: 24px;
+  color: var(--color);
+  cursor: pointer;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.CreateProduct__sumbit:hover {
+  color: var(--altColor);
+  background-color: var(--bgAltColor);
+}
+
+.Settings {
+  width: 100vw;
+  height: calc(100vh - 75px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Settings__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Settings__title {
+  font-family: T-bold, sans-serif;
+  font-size: 48px;
+  color: var(--color);
+  padding-left: 20px;
+}
+.Settings__input {
+  width: 400px;
+  height: 50px;
+  background-color: var(--bgHeader);
+  color: var(--color);
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  font-family: T-light, sans-serif;
+  font-size: 24px;
+}
+.Settings__submit {
+  width: 160px;
+  height: 40px;
+  margin: 10px 0 10px auto;
+  background-color: var(--bgHeader);
+  color: var(--color);
+  border: none;
+  border-radius: 5px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  cursor: pointer;
+  font-family: T-bold;
+  font-size: 20px;
+}
+.Settings__submit:hover {
+  color: var(--altColor);
+  background-color: var(--bgAltColor);
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .Header__content {
     margin: 0 20px;
@@ -1406,5 +1574,102 @@ svg text {
   }
   .Product__text__buttons__btn {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .CreateProduct__conteiner {
+    width: calc(100vw - 20px);
+    margin-top: 75px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .CreateProduct__header {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .CreateProduct__conteiner {
+    width: calc(100vw - 20px);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .CreateProduct__header {
+    font-size: 40px;
+  }
+  .CreateProduct__title {
+    font-size: 24px;
+  }
+  .CreateProduct__PriceAndImg {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .CreateProduct__inputTitle {
+    height: 30px;
+    font-size: 16px;
+    width: 250px;
+  }
+  .CreateProduct__inputDescription {
+    height: 200px;
+    font-size: 16px;
+  }
+  .CreateProduct__inputPrice {
+    font-size: 16px;
+    height: 30px;
+  }
+  .CreateProduct__inputImg {
+    font-size: 16px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .CreateProduct__conteiner {
+    width: calc(100vw - 20px);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .CreateProduct__header {
+    font-size: 28px;
+  }
+  .CreateProduct__title {
+    font-size: 16px;
+  }
+  .CreateProduct__PriceAndImg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .CreateProduct__inputTitle {
+    height: 30px;
+    font-size: 12px;
+    width: 250px;
+  }
+  .CreateProduct__inputDescription {
+    height: 200px;
+    font-size: 12px;
+    width: 100%;
+  }
+  .CreateProduct__inputPrice {
+    font-size: 12px;
+    height: 30px;
+  }
+  .CreateProduct__inputImg {
+    font-size: 12px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Settings__title {
+    font-size: 32px;
+    padding-left: 10px;
+  }
+  .Settings__input {
+    width: 300px;
+    height: 40px;
+    font-size: 24px;
   }
 }

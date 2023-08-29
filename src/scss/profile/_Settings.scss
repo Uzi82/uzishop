@@ -1,0 +1,45 @@
+.Settings {
+    width: 100vw;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-family: T-bold, sans-serif;
+        font-size: 48px;
+        color: var(--color);
+        padding-left: 20px;
+    }
+    &__input {
+        width: 400px;
+        height: 50px;
+        background-color: var(--bgHeader);
+        color: var(--color);
+        padding: 0 20px;
+        border: none;
+        border-radius: 10px;
+        font-family: T-light, sans-serif;
+        font-size: 24px;
+    }
+    &__submit {
+        width: 160px;
+        height: 40px;
+        margin: 10px 0 10px auto;
+        background-color: var(--bgHeader);
+        color: var(--color);
+        border: none;
+        border-radius: 5px;
+        transition-duration: 300ms;
+        cursor: pointer;
+        font-family: T-bold;
+        font-size: 20px;
+        &:hover {
+            color: var(--altColor);
+            background-color: var(--bgAltColor);
+        }
+    }
+}
