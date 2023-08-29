@@ -10,6 +10,7 @@ import SignUp from './profile/SignUp'
 import LogIn from './profile/LogIn'
 import Product from './main/Product'
 import AddProducts from './profile/AddProducts'
+import Error from './main/Error'
 
 const publicRouter = createBrowserRouter([
     {
@@ -34,7 +35,7 @@ const publicRouter = createBrowserRouter([
     },
     {
         path: '*',
-        element: <h1>Page not found</h1>
+        element: <Error />
     },
     {
         path: '/profile',
@@ -101,7 +102,7 @@ const privateRouter = createBrowserRouter([
     },    
     {
         path: '*',
-        element: <h1>Page not found</h1>
+        element: <Error />
     }
 ])
 export { publicRouter, privateRouter }

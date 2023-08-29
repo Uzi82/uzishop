@@ -32,6 +32,9 @@
             }
         }
     }
+    .NextBack {
+        width: 90%;
+    }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
     .Header {
@@ -67,6 +70,9 @@
             }
         }
     }
+    .NextBack {
+        width: 90%;
+    }
 }
 @media screen and (max-width: 767px) {
     .Header {
@@ -74,12 +80,31 @@
             margin: 0 20px;
             width: calc(100vw - 40px);
             &__title {
-                font-size: 16px;
+                font-size: 12px;
             }
         }
     }
+    .Error {
+        &__title {
+            font-size: 48px;
+        }
+    }
     .ProfileBtn {
-        font-size: 16px;
+        font-size: 12px;
+    }
+    .switch {
+        width: 40px;
+        height: 30px;
+    }
+    .slider:before {
+        height: 20px;
+        width: 20px;
+        left: 4px;
+    }
+    input:checked + .slider:before {
+        -webkit-transform: translateX(12px);
+        -ms-transform: translateX(12px);
+        transform: translateX(12px);
     }
     .SearchBar {
         width: 150px !important;
@@ -121,5 +146,8 @@
                 font-size: 0.8em;
             }
         }
+    }
+    .NextBack {
+        width: 90%;
     }
 }
